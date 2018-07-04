@@ -1,0 +1,495 @@
+body {
+    font-family: "Myriad", sans-serif;
+}
+
+main {
+    text-align: center;
+    height: 100%;
+}
+
+.logoutButton {
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: black;
+}
+
+.logoutButton:hover {
+    color: white;
+    background-color: rgba(1, 1, 1, 0.3);
+    border: 1px solid white;
+}
+
+#welcome {
+    margin-top: 100px;
+}
+
+#mainLogo {
+    width: 100px;
+    height: 100px;
+    float: left;
+    border: 1px solid white;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.friendsListDiv {
+    margin-top: 50px;
+}
+
+/* //////////////////REGISTER COMPONENT ///////////////////// */
+
+#register input {
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    text-align: center;
+}
+
+#register button {
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    outline: none;
+}
+
+/* /////////////// LOGIN PAGE ////////////////////////// */
+
+#login input {
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    text-align: center;
+}
+
+#login button {
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    outline: none;
+}
+
+/* ////////////// PROFILE PAGE //////////////////////// */
+
+#addBio {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.profileDiv .profilePic {
+    float: left;
+    height: 150px;
+    width: 150px;
+    margin-right: 15px;
+    position: absolute;
+    left: 10px;
+    top: 140px;
+}
+
+.profileInfo {
+    margin-left: 170px;
+}
+
+.friendButton {
+    margin-left: 170px;
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.friendStatus {
+    border: 1px solid #6c6d6d;
+    color: #6c6d6d;
+    border-radius: 10px;
+    height: 20px;
+    width: 150px;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer;
+    background: #f2f4f7;
+}
+
+.friendStatus:hover {
+    opacity: 0.5;
+}
+
+.profileDiv {
+    width: 100%;
+    margin-top: 50px;
+    text-align: left;
+}
+
+#greeting {
+    width: 500px;
+    margin: 20px auto;
+    font-weight: 300;
+}
+
+.currentFriendList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding: 25px;
+}
+
+.pendingFriendList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding: 25px;
+}
+
+/* ////////////////////// USER COMPONENT /////////////////////  */
+
+.innerUserContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 15px;
+    width: 900px;
+    max-width: 900px;
+}
+
+.innerUserContainer a {
+    text-decoration: none;
+}
+
+.eachUser {
+    width: 275px;
+    height: 110px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.eachUser:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+.userPhotos {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+#bioBox {
+    border: 1px solid black;
+    width: 400px;
+    position: relative;
+    margin: 0 auto;
+    padding: 40px;
+    z-index: 50;
+    background: white;
+    border-radius: 25px;
+}
+
+#bioOverlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#uploaderOverlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#imageUploader {
+    border: 1px solid white;
+    width: 400px;
+    position: relative;
+    margin: 0 auto;
+    padding: 40px;
+    z-index: 50;
+    background: white;
+    top: 100px;
+    border-radius: 25px;
+}
+
+#uploaderClose {
+    position: relative;
+    cursor: pointer;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 300;
+    color: black;
+    padding: 10px;
+    border: 1px solid black;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: rgba(1, 1, 1, 0.3);
+}
+
+.secondProfile {
+    height: 200px;
+}
+
+.profilePic {
+    border: 1px solid white;
+    height: 100px;
+    width: 100px;
+    float: right;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.photoUpdate {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+}
+
+#uploadButton {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid blue;
+}
+
+.welcomeHeading {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding: 10px;
+    font-weight: 300;
+}
+
+/*////////////////// HOME COMPONENT ////////////////////// */
+
+#iconContainer {
+    margin-top: 50px;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 700px;
+    margin-left: calc(50% - 350px);
+    text-align: center;
+}
+
+.homeIcon {
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+    box-shadow: 5px 10px;
+    color: rgba(1, 1, 1, 0.1);
+}
+
+.homeIcon:hover {
+    opacity: 0.5;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* ///////////////// DELETE COMPONENT ///////////////////// */
+
+#deleteOverlay {
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+}
+
+#deleteConfirm {
+    padding: 40px;
+    padding-top: 100px;
+    height: 200px;
+    width: 300px;
+    background: white;
+    border-radius: 25px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+/* //////////////// CHAT COMPONENT ///////////// */
+
+#chatComponent {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 400px;
+    margin-top: 50px;
+}
+
+#chatComponent button {
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.chatDisplay {
+    width: 400px;
+    height: 350px;
+    justify-content: space-around;
+    overflow: auto;
+}
+
+.chatTextBox {
+    justify-content: space-around;
+}
+
+.chatTextBox textarea {
+    width: 395px;
+    height: 75px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    margin-top: 10px;
+    outline: none;
+}
+
+.chatMessage {
+    height: 90px;
+    font-size: 12px;
+}
+
+.chatPhoto {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    float: left;
+}
+
+/* //////////////SEARCH BAR//////////// */
+
+.searchPhoto {
+    height: 50px;
+    width: 50px;
+    float: left;
+    text-align: justify;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.userResult {
+    z-index: 101;
+    height: 50px;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.searchResults {
+    position: absolute;
+    width: 250px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    left: calc(50% - 125px);
+}
+
+#searchBar {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 12px;
+    outline: none;
+    margin-top: 20px;
+}
+
+/* /////////////////// EDIT COMPONENT ///////////////////// */
+
+#editPage input {
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    text-align: center;
+}
+
+#editPage button {
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+/* //////////IMAGES COMPONENT ///////////////////////// */
+
+.imageDisplay {
+    width: 70%;
+    float: right;
+    display: flex;
+    justify-content: space-around;
+}
+.userImage {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: center;
+    margin: 5px;
+}
